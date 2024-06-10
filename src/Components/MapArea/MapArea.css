@@ -13,7 +13,7 @@
     margin: auto;
     height: 60vh;
     width: 95%;
-    border: 2px solid black;
+    border: 2px solid rgb(115, 40, 245);
 }
 
 .mapsidecont {
@@ -36,6 +36,7 @@
     font-family: 'Mukta Vaani', sans-serif;
     width: 95%;
     font-size: 14px;
+    font-weight: bolder;
     margin: auto;
 }
 

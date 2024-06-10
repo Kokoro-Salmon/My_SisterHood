@@ -31,7 +31,8 @@ export default function MapSide() {
         {Incident && (
           <>
             <div className="incidenttitle">
-              Have you been sexually harassed?
+              Have you been 
+              <span className="span-underlined"> sexually harassed? </span>
             </div>
             <div className="incidentdesc">
               Join the 40000+ people who have shared their experiences to make
@@ -54,7 +55,10 @@ export default function MapSide() {
         {!Incident && (
           <>
             <div className="Safetytipstitle">
-              How do you navigate public places safely?
+              How do you 
+              <span className="span-underlined"> navigate </span>
+               public places
+              <span className="span-underlined"> safely? </span>
             </div>
             <div className="Safetytipsdesc">
               Have you found a way out of a potentially traumatic experience?
