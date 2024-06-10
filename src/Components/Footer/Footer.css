@@ -2,8 +2,8 @@
 
 .footer {
   width: 100%;
-  font-size: 15px;
-  background-color: rgb(110, 94, 254);
+  font-size: 1rem;
+  background-color: rgb(115, 40, 245);
   color: white;
   height: 50px;
   display: flex;
