@@ -1,0 +1,9 @@
+.homebody {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1100px) {
+    .homebody {
+        margin-top: 0px;
+    }
+}

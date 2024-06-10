@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap");
+
+.footer {
+  width: 100%;
+  font-size: 15px;
+  background-color: rgb(110, 94, 254);
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Mukta Vaani", sans-serif;
+}

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap");
+
+.mapside {
+  margin: 0px 30px;
+  font-family: "Mukta Vaani", sans-serif;
+}
+
+.incidenttips {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid rgb(183, 183, 183);
+  cursor: pointer;
+}
+
+.safetytips,
+.incidentsnearme {
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.togactive {
+  background-color: rgb(140, 155, 225);
+  color: white;
+}
+
+.incidenttitle {
+  font-size: large;
+  color: blue;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+.Safetytipstitle {
+  font-size: large;
+  color: blue;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+.incidentdesc {
+  font-size: medium;
+}
+
+.Safetytipsdesc {
+  font-size: medium;
+}
+
+.incidentbtn {
+  padding: 20px 0px;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.Safetytipsbtn {
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.incidentsharebtn {
+  background-color: blue;
+  color: white;
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+}
+.Safetytipssharebtn {
+  background-color: rgb(212, 212, 44);
+  color: black;
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.incidentsharedtitle {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+  padding: 10px 0px;
+}
+
+.filterincidents {
+  background: transparent;
+  font-weight: bold;
+  color: blue;
+  font-size: medium;
+  cursor: pointer;
+  border: 2px solid blue;
+  border-radius: 6px;
+  padding: 5px 20px;
+}
+
+.clearincidents {
+  color: red;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: white;
+}
+
+.IncidentScroll {
+  margin: 40px 0px;
+}
