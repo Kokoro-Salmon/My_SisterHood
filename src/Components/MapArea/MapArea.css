@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap');
+
+.mappArea {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin-top: 70px;
+    height: max-content;
+    margin: 40px auto;
+}
+
+.maparea {
+    margin: auto;
+    height: 60vh;
+    width: 95%;
+    border: 2px solid black;
+}
+
+.mapsidecont {
+    height: 100%;
+}
+
+@media screen and (min-width:926px) {
+    .mapsidecont {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:926px) {
+    .mapsidecont {
+        width: 100%;
+    }
+}
+
+.mapdesc {
+    font-family: 'Mukta Vaani', sans-serif;
+    width: 95%;
+    font-size: 14px;
+    margin: auto;
+}
+
+.linktoviewdata {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width:926px) {
+    .mappArea {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
