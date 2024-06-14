@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap');
+
+.legalresource {
+    width: 80%;
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 150px;
+    font-family: 'Mukta Vaani', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FIRfiling,
+.sexualviolence {
+    position: absolute;
+    top: 0vh;
+    transition: all 0.2s ease;
+    height: 10vh;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(110, 94, 254);
+    cursor: pointer;
+}
+
+.FIRfiling {
+    top: 20vh;
+}
+
+.FIRfiling:hover {
+    height: 11vh;
+    width: 420px;
+}
+
+.sexualviolence:hover {
+    height: 11vh;
+    width: 420px;
+}
+
+@media screen and (max-width:1100px) {
+
+    .FIRfiling,
+    .sexualviolence {
+        height: 10px;
+    }
+
+    .legalresource {
+        width: 100vw;
+    }
+
+    .FIRfiling:hover {
+        height: 12px;
+    }
+
+    .sexualviolence:hover {
+        height: 12px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .FIRfiling,
+    .sexualviolence {
+        height: 10px;
+        width: 80vw;
+    }
+
+    .FIRfiling:hover {
+        width: 90vw;
+    }
+
+    .sexualviolence:hover {
+        width: 90vw;
+    }
+}
