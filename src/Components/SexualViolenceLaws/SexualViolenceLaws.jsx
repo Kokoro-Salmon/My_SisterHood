@@ -9,14 +9,14 @@ export const SexualViolenceLaws = () => {
       {/* <Navbar /> */}
       <SideBar />
       <div className="lrcontainer">
-        <h1 className="lrtitle">Sexual Violence Laws under IPC</h1>
+        <h1 className="lrtitle">Sexual Violence Laws under Indian Penal Code (IPC)</h1>
         <div className="lrcontain">
-          {Data.map((lr) => {
+          {Data.map((it) => {
             return (
               <NestedCard
-                heading={lr.heading}
-                sections={lr.sections}
-                punishment={lr.punishment}
+                heading={it.heading}
+                sections={it.sections}
+                punishment={it.punishment}
               />
             );
           })}

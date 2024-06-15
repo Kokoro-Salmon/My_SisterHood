@@ -7,7 +7,7 @@ export const About = () => {
       {/* <Navbar /> */}
       <SideBar />
       <div className="mainContainer">
-        <h1 className="mb">About My Sisterhood</h1>
+        <h1 className="mb">About My SisterHood</h1>
         <div className="logoContainer mb"></div>
         <p className="mb">
           My Sisterhood is a platform that crowdsources personal stories of
