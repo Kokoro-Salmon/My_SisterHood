@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <div className="footer">
-        <div className="fText">Copyright &copy; {currentYear} HerCare</div>
+        <div className="fText">Copyright &copy; {currentYear} MySisterHood</div>
       </div>
     </>
   );
