@@ -47,7 +47,7 @@ export const SideBar = () => {
             to="/About"
           >
             <InfoIcon />
-            &nbsp;&nbsp;About HerCare
+            &nbsp;&nbsp;About My SisterHood
           </NavLink>
         </li>
         <li className="nav-item">

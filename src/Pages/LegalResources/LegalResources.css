@@ -8,59 +8,59 @@
     top: 150px;
     font-family: 'Mukta Vaani', sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
+    gap: 20px; 
 }
 
 .FIRfiling,
 .sexualviolence {
-    position: absolute;
-    top: 0vh;
     transition: all 0.2s ease;
-    height: 10vh;
-    width: 400px;
+    height: 40vh;
+    width: 30vw;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: center;
     background-color: rgb(110, 94, 254);
-    cursor: pointer;
+
 }
 
-.FIRfiling {
-    top: 20vh;
-}
-
-.FIRfiling:hover {
-    height: 11vh;
-    width: 420px;
-}
-
+.FIRfiling:hover,
 .sexualviolence:hover {
-    height: 11vh;
-    width: 420px;
+    /* background-color: #84faaf; */
+    background-color: white;
+    color: rgb(110, 94, 254);
+    cursor: pointer;
+    border: 1px solid rgb(110, 94, 254);
+    .LegalHeading{
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 0.2em;
+        background-position: 0 88%;
+    }
 }
 
 @media screen and (max-width:1100px) {
 
     .FIRfiling,
     .sexualviolence {
-        height: 10px;
+        height: 20vh;
+        width: 50vw;
     }
 
     .legalresource {
         width: 100vw;
+        flex-direction: column; 
     }
 
-    .FIRfiling:hover {
-        height: 12px;
-    }
-
+    .FIRfiling:hover,
     .sexualviolence:hover {
-        height: 12px;
+        height: 12vh;
     }
 }
 
@@ -68,14 +68,11 @@
 
     .FIRfiling,
     .sexualviolence {
-        height: 10px;
+        height: 20vh;
         width: 80vw;
     }
 
-    .FIRfiling:hover {
-        width: 90vw;
-    }
-
+    .FIRfiling:hover,
     .sexualviolence:hover {
         width: 90vw;
     }

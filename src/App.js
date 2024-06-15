@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import LegalResources from './Pages/LegalResources/LegalResources';
 import { SexualViolenceLaws } from './Components/SexualViolenceLaws/SexualViolenceLaws';
-
+import { ContactUs } from './Pages/ContactUs/ContactUs';
+import { About } from './Pages/About/About';
 function App() {
   return (
     <div className="mainapp">
@@ -18,6 +19,8 @@ function App() {
             path="/SexualViolenceLaws"
             element={<SexualViolenceLaws />}
           ></Route>
+           <Route exact path="/Contacts" element={<ContactUs />}></Route>
+           <Route exact path="/About" element={<About />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
