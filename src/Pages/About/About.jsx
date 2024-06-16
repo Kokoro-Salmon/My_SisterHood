@@ -9,6 +9,7 @@ export const About = () => {
       <div className="mainContainer">
         <h1 className="mb">About My SisterHood</h1>
         <div className="logoContainer mb"></div>
+        {/* add the icon */}
         <p className="mb">
           My Sisterhood is a platform that crowdsources personal stories of
           sexual harassment and abuse in public spaces. This data which maybe

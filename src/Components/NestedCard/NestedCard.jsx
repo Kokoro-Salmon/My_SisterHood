@@ -22,7 +22,7 @@ export const NestedCard = (props) => {
   return (
     <div>
       <Accordion
-        style={{ margin: "5% 0", color: "#d94234" }}
+        style={{ margin: "3% 0", color: "#d94234" }}
         expanded={expanded.main}
         onChange={handleExpand("main")}
       >
