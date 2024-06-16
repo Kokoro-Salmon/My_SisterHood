@@ -6,6 +6,8 @@ import LegalResources from './Pages/LegalResources/LegalResources';
 import { SexualViolenceLaws } from './Components/SexualViolenceLaws/SexualViolenceLaws';
 import { ContactUs } from './Pages/ContactUs/ContactUs';
 import { About } from './Pages/About/About';
+import { Faqs } from './Pages/Faqs/Faqs';
+import { FilingFIR } from './Components/FilingFIR/FilingFIR';
 function App() {
   return (
     <div className="mainapp">
@@ -21,6 +23,8 @@ function App() {
           ></Route>
            <Route exact path="/Contacts" element={<ContactUs />}></Route>
            <Route exact path="/About" element={<About />}></Route>
+           <Route exact path="/Faqs" element={<Faqs />}></Route>
+           <Route exact path="/FilingOfFir" element={<FilingFIR />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

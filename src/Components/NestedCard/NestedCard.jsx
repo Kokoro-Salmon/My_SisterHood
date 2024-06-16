@@ -9,7 +9,7 @@ import "./NestedCard.css";
 export const NestedCard = (props) => {
   // State to manage expanded state
   const [expanded, setExpanded] = useState({
-    main: true,
+    main: false,
     sections: true,
     punishments: true,
   });
@@ -31,7 +31,7 @@ export const NestedCard = (props) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography fontSize="1.3rem">{props.heading}</Typography>
+          <Typography fontSize="1.5rem">{props.heading}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Accordion
