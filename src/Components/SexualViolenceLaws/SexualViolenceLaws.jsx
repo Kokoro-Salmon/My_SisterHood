@@ -3,13 +3,17 @@ import { SideBar } from "../SideBar/SideBar";
 import { Data } from "./Data";
 import { NestedCard } from "../NestedCard/NestedCard";
 import "./SexualViolenceLaws.css";
+import Navbar from "../Navbar/Navbar";
+
 export const SexualViolenceLaws = () => {
   return (
     <div className="totaldiv">
-      {/* <Navbar /> */}
+      <Navbar />
       <SideBar />
       <div className="lrcontainer">
-        <h1 className="lrtitle">Sexual Violence Laws under Indian Penal Code (IPC)</h1>
+        <h1 className="lrtitle">
+          Sexual Violence Laws under Indian Penal Code (IPC)
+        </h1>
         <div className="lrcontain">
           {Data.map((it) => {
             return (

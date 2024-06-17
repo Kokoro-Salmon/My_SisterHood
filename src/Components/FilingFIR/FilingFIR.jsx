@@ -3,11 +3,12 @@ import "./FilingFIR.css";
 import { SideBar } from "../SideBar/SideBar";
 import { Data } from "./Data";
 import { FIRCard } from "../FIRCard/FIRCard";
+import Navbar from "../Navbar/Navbar";
 
 export const FilingFIR = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <SideBar />
       <div className="fircontainer">
         <h1 className="firtitle">
