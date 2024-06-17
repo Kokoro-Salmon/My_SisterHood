@@ -1,15 +1,17 @@
 import React from "react";
+import Navbar from "../../Components/Navbar/Navbar";
+import Slider from "../../Components/Slider/Slider";
 import MapArea from "../../Components/MapArea/MapArea";
 import Footer from "../../Components/Footer/Footer";
 
 
 export default function Home() {
   return (
-    <>
-     <div>Home lorem45</div>
+    <div>
+      <Navbar />
+      <Slider />
       <MapArea />
       <Footer /> 
-      {/* footer apne aap niche jayega sab uske upar tu component dalega */}
-    </>
+    </div>
   );
 }
