@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap');
+
+
+.navList {
+    top:0px;
+    left:0px;
+    width: 20%;
+    top:80px;
+    height:100vh;
+    position: fixed;
+    background-color: #d6d6d6;
+}
+
+.nav {
+    position: sticky;
+    list-style: none;
+    overflow: hidden;
+    margin-top:30px;
+}
+
+.nav-item {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color:black;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding:5px 20px;
+}
+
+li>a {
+    display: inline-block;
+    padding: 0px 5px;
+    width: 100%;
+}
+.sideactive{
+    background: linear-gradient(90deg, rgb(176, 171, 225) 0%, rgb(181, 178, 237) 100%);
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1100px) {
+    .navList {
+        display: none;
+    }
+}
