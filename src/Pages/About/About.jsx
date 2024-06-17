@@ -1,10 +1,12 @@
 import React from "react";
 import { SideBar } from "../../Components/SideBar/SideBar";
 import "./About.css";
+import Navbar from "../../Components/Navbar/Navbar";
+
 export const About = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <SideBar />
       <div className="mainContainer">
         <h1 className="mb">About My SisterHood</h1>

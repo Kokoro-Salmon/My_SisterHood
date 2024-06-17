@@ -13,22 +13,22 @@ const Dropdown = () => {
       className={!click ? "dropdown-menu clicked" : "dropdown-menu active"}
     >
       <li>
-        <NavLink to="/legal_resources" onClick={() => setClick(false)}>
+        <NavLink to="/LegalResources" onClick={() => setClick(false)}>
           Legal Resources
         </NavLink>
       </li>
       <li>
-        <NavLink to="/contact" onClick={() => setClick(false)}>
+        <NavLink to="/Contacts" onClick={() => setClick(false)}>
           Contact Us
         </NavLink>
       </li>
       <li>
-        <NavLink to="/about" onClick={() => setClick(false)}>
+        <NavLink to="/About" onClick={() => setClick(false)}>
           About HerCare
         </NavLink>
       </li>
       <li>
-        <NavLink to="/faqs" onClick={() => setClick(false)}>
+        <NavLink to="/Faqs" onClick={() => setClick(false)}>
           Faqs
         </NavLink>
       </li>

@@ -1,6 +1,5 @@
 .nav-menu {
   display: flex;
-  direction: row;
   gap: 30px;
   font-size: 20px;
   font-weight: 480;
