@@ -32,15 +32,18 @@
 }
 
 .logoContainer {
-  /* background: url("../../images/logo.jfif"); */
+  background: url("../../Images/logo\ \(1\).svg") no-repeat center center;
   height: 200px;
   width: 200px;
-  background-repeat: no-repeat;
+  background-size: 65%; /* This will scale the image to be contained within the circle */
   border-radius: 50%;
   border: 15px solid rgb(110, 94, 254);
+  display: flex; /* Use flexbox to center content if any */
   align-items: center;
+  justify-content: center;
   margin: auto;
 }
+
 
 .mainContainer > p {
   text-align: left;
