@@ -1,0 +1,32 @@
+.MainLander {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/public/My_SisterHood.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.spacing {
+  height: 15vh;
+}
+
+.MainHeading {
+  font-size: 7vw; 
+  background: linear-gradient(
+    180deg,
+    rgba(222, 217, 251) 0%,
+    rgb(147, 126, 254) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  .MainLander {
+    font-size: 20vw; 
+    background-size: cover;
+  }
+}

@@ -46,6 +46,7 @@ export default function Slider() {
   };
 
   return (
+    <div className="master-slider">
     <div className="container-slider">
       {DataSlider.map((obj, index) => {
         return (
@@ -77,6 +78,7 @@ export default function Slider() {
           ></div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

@@ -176,7 +176,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div style={{ marginTop: "100px" }}>
+      <div style={{ marginTop: "0px" }}>
         {/* This margin ensures content doesn't overlap with fixed navbar */}
       </div>
       <style jsx>{`
