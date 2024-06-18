@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
-import logo from "../../Images/logo.png";
+import logo from "../../Images/logo (1).svg";
 import warningImg from "../../Images/warningImg.png";
 import Dropdown from "../Dropdown/Dropdown";
 import CancelIcon from "@mui/icons-material/Cancel";
