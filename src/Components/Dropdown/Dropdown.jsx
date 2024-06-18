@@ -24,7 +24,7 @@ const Dropdown = () => {
       </li>
       <li>
         <NavLink to="/About" onClick={() => setClick(false)}>
-          About HerCare
+          About My SisterHood
         </NavLink>
       </li>
       <li>
