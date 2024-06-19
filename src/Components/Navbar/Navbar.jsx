@@ -142,7 +142,12 @@ const Navbar = () => {
             {dropdown && <Dropdown />}
           </div>
         </div>
-        <div direction="row" fontSize="20px" className="mini-screen">
+        <div
+          direction="row"
+          fontSize="20px"
+          className="mini-screen"
+          style={{ marginTop: "3px" }}
+        >
           <Link to="/Help" style={linkStyle} className="hover-zoom">
             <button
               style={{
@@ -197,11 +202,18 @@ const Navbar = () => {
           }
           .mini-screen {
             justify-self: flex-end;
+            margin-right: 7px;
           }
         }
         @media (min-width: 1101px) {
           .main-div {
             display: flex;
+          }
+          .mini-screen {
+            margin-right: 20px;
+          }
+          .logo-box {
+            margin-left: 20px;
           }
         }
       `}</style>
