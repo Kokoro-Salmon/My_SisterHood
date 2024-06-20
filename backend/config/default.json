@@ -1,0 +1,10 @@
+{
+  "dbconfig": {
+    "url": "${MONGODB_URI}"
+  },
+  "logging": {
+    "level": "${LOG_LEVEL}",
+    "fileLocation": "${LOG_FILE_LOCATION}"
+  },
+  "environment": "${ENVIRONMENT}"
+}

@@ -13,7 +13,7 @@
 }
 
 .MainHeading {
-  font-size: 7vw; 
+  font-size: 7vw;
   background: linear-gradient(
     180deg,
     rgba(222, 217, 251) 0%,
@@ -26,7 +26,7 @@
 
 @media (max-width: 1000px) {
   .MainLander {
-    font-size: 20vw; 
+    font-size: 20vw;
     background-size: cover;
   }
 }
