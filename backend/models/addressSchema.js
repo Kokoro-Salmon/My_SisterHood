@@ -2,7 +2,7 @@
 
 const mongoose = require("mongoose");
 
-var addressSchema = new mongoose.Schema({
+const addressSchema = new mongoose.Schema({
   country: {
     type: String,
     allowNull: false,

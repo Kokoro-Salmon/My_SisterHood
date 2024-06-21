@@ -1,42 +1,40 @@
 const YAML = require("yamljs");
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+const createError = require("http-errors");
+const express = require("express");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
 const config = require("config");
-const swaggerUI = require("swagger-ui-express");
-const swaggerJsDoc = require("swagger-jsdoc");
+// const swaggerUI = require("swagger-ui-express");
+// const swaggerJsDoc = require("swagger-jsdoc");
 
-const options = {
-  definition: {
-    openapi: "3.0.3",
-    info: {
-      title: "Sisterhood API",
-      version: "1.0.0",
-      description: "A simple Express APIs",
-    },
-    servers: [
-      {
-        url: "http://localhost:3000",
-      },
-    ],
-  },
-  apis: ["./routes/*.js"],
-};
+// const options = {
+//   definition: {
+//     openapi: "3.0.3",
+//     info: {
+//       title: "Sisterhood API",
+//       version: "1.0.0",
+//       description: "A simple Express APIs",
+//     },
+//     servers: [
+//       {
+//         url: "http://localhost:3000",
+//       },
+//     ],
+//   },
+//   apis: ["./routes/*.js"],
+// };
 
-const specs = swaggerJsDoc(options);
+// const specs = swaggerJsDoc(options);
 
-var indexRouter = require("./routes/index");
+const indexRouter = require("./routes/index");
 
-// require("dotenv").config();
-
-var app = express();
+const app = express();
 const cors = require("cors");
 app.use(cors());
 //app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
+// app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

@@ -3,6 +3,7 @@ const { SafetyTip } = require("../models");
 // const logger = require('../lib/logging');
 
 const create = async function (req, res) {
+  let err, safetytip;
   res.setHeader("Content-Type", "application/json");
   const body = req.body;
 
@@ -82,13 +83,14 @@ const getAllSafetyTips = async function (req, res) {
     "Online Harassment",
     "Human Trafficking",
   ];
-
+  
   if (typesofassaultst) {
     currenttypeofassault = typesofassaultst.split(",");
   }
-
+  
   let err, safetyTips;
   console.log("hye" + locationsst);
+  
 
   if (locationsst) {
     [err, safetyTips] = await to(
@@ -104,7 +106,7 @@ const getAllSafetyTips = async function (req, res) {
       })
     );
   }
-
+  
   if (err) {
     // logger.error("Safety Tips Controller - get : Safety Tips not found", err);
     return ReE(res, err, 422);
