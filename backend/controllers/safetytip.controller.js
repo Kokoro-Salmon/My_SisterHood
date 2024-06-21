@@ -65,6 +65,8 @@ module.exports.findSafetyTipById = findByPk;
 
 const getAllSafetyTips = async function (req, res) {
   const { locationsst, typesofassaultst } = req.query;
+  console.log(req.query);
+
   let currenttypeofassault = [
     "Physical Assault",
     "Rape/Sexual Assault",
@@ -80,11 +82,14 @@ const getAllSafetyTips = async function (req, res) {
     "Online Harassment",
     "Human Trafficking",
   ];
+
   if (typesofassaultst) {
     currenttypeofassault = typesofassaultst.split(",");
   }
+
   let err, safetyTips;
   console.log("hye" + locationsst);
+
   if (locationsst) {
     [err, safetyTips] = await to(
       SafetyTip.find({
@@ -95,12 +100,11 @@ const getAllSafetyTips = async function (req, res) {
   } else {
     [err, safetyTips] = await to(
       SafetyTip.find({
-        time: {
-          typeOfViolence: { $in: currenttypeofassault },
-        },
+        typeOfViolence: { $in: currenttypeofassault },
       })
     );
   }
+
   if (err) {
     // logger.error("Safety Tips Controller - get : Safety Tips not found", err);
     return ReE(res, err, 422);
