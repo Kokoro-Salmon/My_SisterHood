@@ -1,10 +1,10 @@
 "use strict";
 
-var fs = require("fs");
-var path = require("path");
-var mongoose = require("mongoose");
-var basename = path.basename(__filename);
-var db = {};
+const fs = require("fs");
+const path = require("path");
+const mongoose = require("mongoose");
+const basename = path.basename(__filename);
+const db = {};
 const config = require("config");
 require("dotenv").config();
 
@@ -35,7 +35,7 @@ fs.readdirSync(__dirname)
     );
   })
   .forEach((file) => {
-    var model = require(path.join(__dirname, file));
+    const model = require(path.join(__dirname, file));
     db[model.modelName] = model;
   });
 
