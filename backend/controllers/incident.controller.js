@@ -71,7 +71,8 @@ module.exports.findIncidentById = findByPk;
 
 const getAllIncidents = async function (req, res) {
   const { typesofassault, locations, showIncidentsfrom } = req.query;
-  console.log(req.query);
+  console.log("Query parameters:", req.query);
+  // console.log(req.query);
   console.log(typesofassault);
   // const searchjson = {};
   let val = 100 * 365;
@@ -104,7 +105,7 @@ const getAllIncidents = async function (req, res) {
   if (typesofassault) {
     currenttypeofassault = typesofassault.split(",");
   }
-  console.log(val);
+  // console.log(val);
   let err, incident;
   if (locations) {
     [err, incident] = await to(
@@ -133,9 +134,10 @@ const getAllIncidents = async function (req, res) {
   console.log(incident);
   if (err) {
     // logger.error("Incident Controller - get : Incident not found", err);
+    console.log("Error finding incidents:", err);
     return ReE(res, err, 422);
   }
-
+  console.log("Found incidents:", incident);
   res.setHeader("Content-Type", "application/json");
 
   return ReS(res, incident);
