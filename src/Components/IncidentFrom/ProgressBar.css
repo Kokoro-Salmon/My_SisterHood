@@ -1,0 +1,29 @@
+.progresscont {
+    width: 50vw;
+  }
+  
+  .progress {
+    background-color: white;
+    margin: 15px 0;
+    position: relative;
+    height: 21px;
+    width: 50%;
+    margin-left: 20%;
+  }
+  
+  .progress-text {
+    margin-left: 20%;
+  }
+  
+  .progress-PercentDone {
+    background: linear-gradient(to left, #F2709C, #FF9472);
+    box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease 0.3s;
+  }

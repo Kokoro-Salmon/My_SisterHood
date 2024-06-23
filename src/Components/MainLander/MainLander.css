@@ -15,11 +15,12 @@
 
 .MainHeading {
   font-size: 7vw;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(222, 217, 251) 0%,
     rgb(147, 126, 254) 100%
-  );
+  ); */
+  background-color: rgb(147, 126, 254);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 400;

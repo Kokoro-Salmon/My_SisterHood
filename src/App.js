@@ -9,6 +9,7 @@ import { About } from "./Pages/About/About";
 import { Faqs } from "./Pages/Faqs/Faqs";
 import { FilingFIR } from "./Components/FilingFIR/FilingFIR";
 import TopNGOs from "../src/Pages/TopNgos/TopNgos";
+import { IncidentForm } from "./Components/IncidentFrom/IncidentForm";
 function App() {
   return (
     <div className="mainapp">
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/About" element={<About />}></Route>
           <Route exact path="/Faqs" element={<Faqs />}></Route>
           <Route exact path="/FilingOfFir" element={<FilingFIR />}></Route>
+          <Route exact path="/IncidentForm" element={<IncidentForm />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
