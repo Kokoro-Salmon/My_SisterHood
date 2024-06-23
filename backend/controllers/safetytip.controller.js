@@ -67,7 +67,7 @@ module.exports.findSafetyTipById = findByPk;
 const getAllSafetyTips = async function (req, res) {
   const { locationsst, typesofassaultst } = req.query;
   console.log(req.query);
-  
+
   let currenttypeofassault = [
     "Physical Assault",
     "Rape/Sexual Assault",
@@ -91,6 +91,7 @@ const getAllSafetyTips = async function (req, res) {
   let err, safetyTips;
   console.log("hye" + locationsst);
   
+
   if (locationsst) {
     [err, safetyTips] = await to(
       SafetyTip.find({
