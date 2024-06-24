@@ -14,7 +14,7 @@ import { IncidentDescription } from "./IncidentDescription";
 import { TypeOfViolence } from "./TypeOfViolence";
 import { ReportedToPolice } from "./ReportedToPolice";
 import { Places } from "./Places";
-
+import axios from "axios";
 export const IncidentForm = () => {
   const navigate = useNavigate();
   const [page, setPage] = useState(0);
@@ -54,6 +54,18 @@ export const IncidentForm = () => {
     e.preventDefault();
 
     console.log(formData);
+    // console.log(JSON.stringify(formData));
+    await axios
+    .post(
+      "http://localhost:3000/incident",
+      JSON.stringify(formData),
+      {
+        headers: { "Content-Type": "application/json" },
+      }
+    )
+    .then((result) => {
+      navigate("/");
+    });
   };
 
   const checkPage = () => {
