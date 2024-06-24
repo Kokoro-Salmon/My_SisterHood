@@ -10,6 +10,7 @@
 
 .body {
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .form-container {
@@ -21,29 +22,8 @@
 }
 
 .Form {
-  background: hsla(233, 100%, 90%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(233, 100%, 90%, 1) 0%,
-    hsla(0, 0%, 89%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(233, 100%, 90%, 1) 0%,
-    hsla(0, 0%, 89%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(233, 100%, 90%, 1) 0%,
-    hsla(0, 0%, 89%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CAD0FF", endColorstr="#E3E3E3", GradientType=1);
+  background-image: linear-gradient(to bottom, #fdf0f0, #b6abf6);
   font-family: "Mukta Vaani", sans-serif;
-  margin: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
