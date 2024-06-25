@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap");
+
+.Incidentonecard {
+  padding: 10px;
+  width: 340px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue;
+  background-color: #fff;
+  font-family: "Mukta Vaani", sans-serif;
+  filter: drop-shadow(1px 5px 3px rgb(136, 133, 133));
+  position: relative;
+}
+
+@media screen and (max-width: 425px) {
+  .Incidentonecard {
+    height: max-content;
+  }
+}
+
+.incidentTitle {
+  color: blue;
+  font-size: 20px;
+  text-align: left;
+}
+
+.IncidentHeader {
+  font-weight: bold;
+}
+
+.incidentdesc {
+  padding: 15px 0px;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.incidentlocation {
+  display: flex;
+  flex-direction: row;
+}
+
+.incidentTime {
+  display: flex;
+  flex-direction: row;
+}
+
+.incidentDate {
+  display: flex;
+  flex-direction: row;
+}
+
+.incidentlocandatetimespace {
+  height: 240px;
+}
+
+.incidentlocandatetime {
+  position: absolute;
+  bottom: 10px;
+}
+
+@media screen and(min-width:425px) {
+  .incidentlocandatetime {
+    position: absolute;
+    bottom: 10px;
+  }
+}
