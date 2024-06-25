@@ -32,6 +32,4 @@ const Incident = mongoose.model(
   )
 );
 
-const doc = new Incident();
-doc.address;
 module.exports = Incident;

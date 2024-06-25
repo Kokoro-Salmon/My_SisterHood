@@ -1,0 +1,187 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.identity-container {
+  width: 100%;
+}
+
+.body {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.form-container {
+  margin: auto;
+  width: 50%;
+  padding: 15px;
+  margin-top: 6px;
+  align-items: center;
+}
+
+.Form {
+  background-image: linear-gradient(to bottom, #fdf0f0, #b6abf6);
+  font-family: "Mukta Vaani", sans-serif;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.formTitles {
+  display: flex;
+  padding: 5% 0%;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1 {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.button2 {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.buttons {
+  margin: 10px 0%;
+  padding: 5%;
+}
+
+.age {
+  width: 40%;
+  padding: 10px;
+  margin-left: 30%;
+  height: 10vh;
+}
+
+.age input {
+  width: 30%;
+  height: 4vh;
+}
+
+.date {
+  width: 40%;
+  padding: 10px;
+  margin-left: 30%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+.date input {
+  width: 50%;
+  height: 4vh;
+}
+
+.prevBtn {
+  justify-content: start;
+}
+
+.nextBtn {
+  justify-content: end;
+}
+
+.navigateBtn {
+  cursor: pointer;
+  background-color: rgb(110, 94, 254);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 7.5px 15px 7.5px 15px;
+  text-decoration: none;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.navigateBtn:hover {
+  background-color: rgb(129, 118, 223);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+}
+
+.IncidentFormBtns {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.IncidentFormBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.none {
+  margin-right: 50%;
+  justify-content: start;
+  display: none;
+}
+
+.places-container {
+  position: absolute;
+  margin-top: 1.75%;
+  width: 400px;
+  margin-left: 30%;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+}
+
+.combobox-input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.incidenttitleanddesc {
+  padding: 0px 10px;
+  color: blue;
+}
+
+.conditions {
+  padding: 8px;
+  margin-bottom: 1%;
+}
+
+.location {
+  height: 70vh;
+}

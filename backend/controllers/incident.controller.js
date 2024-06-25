@@ -3,6 +3,7 @@ const { Incident } = require("../models");
 // const logger = require("../lib/logging");
 
 const create = async function (req, res) {
+  let err, incident;
   res.setHeader("Content-Type", "application/json");
   // const body = JSON.parse(JSON.stringify(req.body));
   const body = Object.assign({}, req.body);
@@ -73,7 +74,7 @@ const getAllIncidents = async function (req, res) {
   console.log("Query parameters:", req.query);
   // console.log(req.query);
   console.log(typesofassault);
-  const searchjson = {};
+  // const searchjson = {};
   let val = 100 * 365;
   // console.log(s)
   if (showIncidentsfrom === "Today") {
@@ -146,7 +147,7 @@ module.exports.getAllIncidents = getAllIncidents;
 const getIncidentFormData = async function (req, res) {
   let err, incident;
   [err, incident] = await to(Incident.find());
-  // console.log(incident);
+  console.log(incident);
   if (err) {
     // logger.error("Incident Controller - get : Incident not found", err);
     return ReE(res, err, 422);

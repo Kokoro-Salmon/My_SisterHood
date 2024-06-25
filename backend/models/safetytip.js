@@ -22,6 +22,4 @@ const SafetyTip = mongoose.model(
   )
 );
 
-const doc = new SafetyTip();
-doc.address;
 module.exports = SafetyTip;

@@ -3,6 +3,7 @@
   width: 100%;
   background-image: url("/public/My_SisterHood.png");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -14,19 +15,32 @@
 
 .MainHeading {
   font-size: 7vw;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(222, 217, 251) 0%,
     rgb(147, 126, 254) 100%
-  );
+  ); */
+  background-color: rgb(147, 126, 254);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 400;
 }
 
-@media (max-width: 1000px) {
+@media (max-aspect-ratio: 2880/1532) {
   .MainLander {
     font-size: 20vw;
     background-size: cover;
   }
 }
+
+@media (min-aspect-ratio: 2880/1532) {
+  .MainLander {
+    font-size: 20vw;
+    background-size: cover;
+  }
+}
+
+
+
+
+
