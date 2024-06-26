@@ -1,0 +1,58 @@
+.SafetyTipsfiltering {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.searchSafetyTips,
+.deleteSafetyTips {
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.searchSafetyTips {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+.deleteSafetyTips {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.searchSafetyTips:hover {
+  background-color: rgb(124, 124, 219);
+}
+
+.deleteSafetyTips:hover {
+  background-color: rgb(207, 122, 122);
+}
+
+.SafetyTipsbtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.IndianStatesdropst,
+.showIncidentswithin {
+  width: 100%;
+}
+
+.typeofassaultdrop {
+  max-width: 100%;
+}
