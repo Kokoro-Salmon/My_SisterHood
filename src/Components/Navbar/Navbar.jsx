@@ -84,8 +84,8 @@ const Navbar = () => {
           >
             Home
           </Link>
-          <a
-            href="#SharedIncidentsandSafetyTips"
+          <Link
+            to="/SharedData"
             style={
               activeSection === "sharedincidentsandsafetytips"
                 ? activeLinkStyle
@@ -98,7 +98,7 @@ const Navbar = () => {
             className="hover-zoom"
           >
             Shared Incidents and Safety Tips
-          </a>
+          </Link>
           <Link
             to="/TopNGOs"
             style={activeSection === "topngos" ? activeLinkStyle : linkStyle}
