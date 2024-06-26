@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "prebuild": "npm install",
+    "build": "echo 'No build steps required'",
+    "postbuild": "echo 'Build process completed'"
   },
   "keywords": [],
   "author": "",
