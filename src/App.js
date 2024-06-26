@@ -23,21 +23,16 @@ function App() {
           <Route path="/TopNGOs" element={<TopNGOs />} />
           <Route path="/LegalResources" element={<LegalResources />} />
           <Route
-            exact
             path="/SexualViolenceLaws"
             element={<SexualViolenceLaws />}
           ></Route>
-          <Route exact path="/Contacts" element={<ContactUs />}></Route>
-          <Route exact path="/About" element={<About />}></Route>
-          <Route exact path="/Faqs" element={<Faqs />}></Route>
-          <Route exact path="/FilingOfFir" element={<FilingFIR />}></Route>
-          <Route exact path="/IncidentForm" element={<IncidentForm />}></Route>
-          <Route
-            exact
-            path="/SafetyTipForm"
-            element={<SafetyTipForm />}
-          ></Route>
-          <Route exact path="/SharedData" element={<SharedData />}></Route>
+          <Route path="/Contacts" element={<ContactUs />}></Route>
+          <Route path="/About" element={<About />}></Route>
+          <Route path="/Faqs" element={<Faqs />}></Route>
+          <Route path="/FilingOfFir" element={<FilingFIR />}></Route>
+          <Route path="/IncidentForm" element={<IncidentForm />}></Route>
+          <Route path="/SafetyTipForm" element={<SafetyTipForm />}></Route>
+          <Route path="/SharedData" element={<SharedData />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
