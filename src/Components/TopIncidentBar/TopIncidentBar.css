@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap");
+
+.topIncidentBar {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  font-family: "Mukta Vaani", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 5px;
+}
+
+.headings {
+  height: max-content;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border: 2px solid rgb(132, 139, 219);
+  color: rgb(132, 139, 219);
+  white-space: nowrap;
+}
+
+.toptypeofassault,
+.state,
+.showincidentsfrom {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.filterdata {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 0.8rem;
+}
+
+.chipcontainer {
+  background-color: rgb(132, 139, 219);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.filterincidents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

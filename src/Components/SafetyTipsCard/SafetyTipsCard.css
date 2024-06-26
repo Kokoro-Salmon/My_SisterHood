@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap");
+
+.SafetyTipsonecard {
+  padding: 10px;
+  width: 320px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue;
+  background-color: #fff;
+  font-family: "Mukta Vaani", sans-serif;
+  filter: drop-shadow(1px 5px 3px rgb(136, 133, 133));
+  position: relative;
+}
+
+.SafetyTipsTitle {
+  color: blue;
+  font-size: 20px;
+  text-align: left;
+}
+
+.SafetyTipsHeader {
+  font-weight: bold;
+}
+
+.SafetyTipsdesc {
+  padding: 15px 0px;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.SafetyTipsLocation {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

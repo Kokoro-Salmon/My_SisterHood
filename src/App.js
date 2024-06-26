@@ -11,6 +11,8 @@ import { FilingFIR } from "./Components/FilingFIR/FilingFIR";
 import TopNGOs from "../src/Pages/TopNgos/TopNgos";
 import { IncidentForm } from "./Components/IncidentFrom/IncidentForm";
 import { SafetyTipForm } from "./Components/SafetyTipForm/SafetyTipForm";
+import SharedData from "./Pages/SharedData/SharedData";
+
 function App() {
   return (
     <div className="mainapp">
@@ -30,6 +32,7 @@ function App() {
           <Route path="/FilingOfFir" element={<FilingFIR />}></Route>
           <Route path="/IncidentForm" element={<IncidentForm />}></Route>
           <Route path="/SafetyTipForm" element={<SafetyTipForm />}></Route>
+          <Route path="/SharedData" element={<SharedData />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

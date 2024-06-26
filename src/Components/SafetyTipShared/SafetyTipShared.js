@@ -5,16 +5,17 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import _without from "lodash/without";
+import { useContext } from "react";
+import useFetch from "../../Hooks/useFetch";
+import "./SafetyTipShared.css";
 import SearchIcon from "@mui/icons-material/Search";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { SafetyTipsContext } from "../../Context/SafetyTipsContext";
 import Checkbox from "@mui/material/Checkbox";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import ListItemText from "@mui/material/ListItemText";
-import { SearchContext } from "../../Context/SearchContext";
-import { useContext } from "react";
-import useFetch from "../../Hooks/useFetch";
-import "./IncidentShared.css";
 
 const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;
@@ -34,7 +35,6 @@ const options = [
   "Online Harassment",
   "Human Trafficking",
 ];
-const timeshow = ["All time", "Today", "This Week", "This Month", "This Year"];
 const Indiastates = [
   "Andaman and Nicobar Islands",
   "Andhra Pradesh",
@@ -86,56 +86,41 @@ const MenuProps = {
   },
 };
 
-export default function IncidentShared() {
-  const {
-    typesofassault,
-    setTypesofassault,
-    locations,
-    setLocations,
-    showIncidentsfrom,
-    setShowIncidentsfrom,
-  } = useContext(SearchContext);
+export default function Showincidentsshared() {
+  const { typesofassaultst, setTypesofassaultst, locationsst, setLocationsst } =
+    useContext(SafetyTipsContext);
 
   const { data, loading, reFetch } = useFetch(
-    `http://localhost:3000/getAllIncidents?typesofassault=${typesofassault}&locations=${locations}&showIncidentsfrom=${showIncidentsfrom}`
+    `http://localhost:3000/getAllSafetyTips?typesofassaultst=${typesofassaultst}&locationsst=${locationsst}`
   );
+  const [typeofassaultst, setTypeofassaultst] = useState([]);
+  const [locationst, setLocationst] = useState("");
 
-  const [typeofassault, setTypeofassault] = useState([]);
-  const [location, setLocation] = useState("");
-  const [showIncidentfrom, setShowIncidentfrom] = useState("All time");
-
-  const handleIncidentSearch = () => {
-    console.log(data);
-    setTypesofassault(typeofassault);
-    setLocations(location);
-    setShowIncidentsfrom(showIncidentfrom);
-  };
-  const handleIncidentClear = () => {
-    console.log();
-    setTypesofassault([]);
-    setTypeofassault([]);
-    setLocation("");
-    setLocations("");
-    setShowIncidentfrom("All time");
-    setShowIncidentsfrom("All time");
-  };
   const handleTypeofassault = (event) => {
     const {
       target: { value },
     } = event;
-    setTypeofassault(
+    setTypeofassaultst(
       // On autofill we get a stringified value.
       typeof value === "string" ? value.split(",") : value
     );
   };
-  const handleshowincidentwithin = (event) => {
-    setShowIncidentfrom(event.target.value);
+  const handleSafetyTipsSearch = () => {
+    console.log(data);
+    setLocationsst(locationst);
+    setTypesofassaultst(typeofassaultst);
+  };
+  const handleSafetyTipsClear = () => {
+    setTypeofassaultst([]);
+    setTypesofassaultst([]);
+    setLocationst("");
+    setLocationsst("");
   };
   const handleLocation = (event) => {
-    setLocation(event.target.value);
+    setLocationst(event.target.value);
   };
   return (
-    <div className="incidentfiltering">
+    <div className="SafetyTipsfiltering">
       <div className="typeofassaultdrop">
         <FormControl sx={{ m: 1, width: "100%" }}>
           <InputLabel id="demo-multiple-checkbox-label">
@@ -145,10 +130,10 @@ export default function IncidentShared() {
             labelId="demo-multiple-checkbox-label"
             id="demo-multiple-checkbox"
             multiple
-            value={typeofassault}
+            value={typeofassaultst}
             onChange={handleTypeofassault}
             input={<OutlinedInput label="Type of Assault" />}
-            renderValue={(typeofassault) => "Types of Assault"}
+            renderValue={(selected) => "Types of Assault"}
             MenuProps={MenuProps}
           >
             {options.map((name) => (
@@ -157,23 +142,23 @@ export default function IncidentShared() {
                 value={name}
                 style={{ whiteSpace: "unset", wordBreak: "break-all" }}
               >
-                <Checkbox checked={typeofassault.indexOf(name) > -1} />
+                <Checkbox checked={typeofassaultst.indexOf(name) > -1} />
                 <ListItemText primary={name} />
               </MenuItem>
             ))}
           </Select>
         </FormControl>
       </div>
-      <div className="IndianStatesdrop">
+      <div className="IndianStatesdropst">
         <Box>
-          <FormControl sx={{ m: 1, width: "100%" }}>
+          <FormControl fullWidth sx={{ m: 1, width: "100%" }}>
             <InputLabel id="demo-simple-select-label">
               Select Indian State
             </InputLabel>
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"
-              value={location}
+              value={locationst}
               label="Select Indian State"
               onChange={handleLocation}
             >
@@ -184,32 +169,12 @@ export default function IncidentShared() {
           </FormControl>
         </Box>
       </div>
-      <div className="showIncidentswithin">
-        <Box>
-          <FormControl sx={{ m: 1, width: "100%" }}>
-            <InputLabel id="demo-simple-select-label">
-              Show Incident Within
-            </InputLabel>
-            <Select
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={showIncidentfrom}
-              label="Show Incidents Within"
-              onChange={handleshowincidentwithin}
-            >
-              {timeshow.map((time) => {
-                return <MenuItem value={time}>{time}</MenuItem>;
-              })}
-            </Select>
-          </FormControl>
-        </Box>
-      </div>
-      <div className="incidentbtns">
-        <button className="searchincidents" onClick={handleIncidentSearch}>
+      <div className="SafetyTipsbtns">
+        <button className="searchSafetyTips" onClick={handleSafetyTipsSearch}>
           Search&nbsp;
           <SearchIcon />
         </button>
-        <button className="deleteincidents" onClick={handleIncidentClear}>
+        <button className="deleteSafetyTips" onClick={handleSafetyTipsClear}>
           Clear&nbsp;
           <DeleteIcon />
         </button>

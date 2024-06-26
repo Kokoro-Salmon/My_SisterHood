@@ -1,0 +1,25 @@
+.viewdatacont {
+  transform: translateY(90px);
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+  .viewdatacont {
+    transform: translateY(10px);
+  }
+}
+
+.topfilterbar {
+  width: 98vw;
+  margin: auto;
+}
+
+.cardsofincident {
+  margin: 30px;
+  padding: 10px;
+}
+
+.viewdatafooter {
+  transform: translateY(80px);
+}
