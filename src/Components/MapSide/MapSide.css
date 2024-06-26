@@ -76,7 +76,10 @@
   border-radius: 8px;
   cursor: pointer;
   padding: 12px;
-  font-size: 16px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Safetytipssharebtn {
   background-color: rgb(115, 40, 245);
@@ -86,7 +89,10 @@
   border-radius: 8px;
   cursor: pointer;
   padding: 12px;
-  font-size: 16px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .incidentsharedtitle {

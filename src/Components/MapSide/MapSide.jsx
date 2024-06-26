@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./MapSide.css";
+import { Link } from "react-router-dom";
 
 export default function MapSide() {
   const [Incident, setIncident] = useState(true);
@@ -31,7 +32,7 @@ export default function MapSide() {
         {Incident && (
           <>
             <div className="incidenttitle">
-              Have you been 
+              Have you been
               <span className="span-underlined"> sexually harassed? </span>
             </div>
             <div className="incidentdesc">
@@ -43,21 +44,24 @@ export default function MapSide() {
               infrastructure. Your information remains anonymous.
             </div>
             <div className="incidentbtn">
-              <button
+              <Link
+                to="/IncidentForm"
                 className="incidentsharebtn"
-                // Navigation to be put Here
+                style={{ textDecoration: "none" }}
               >
+                {/* <button className="incidentsharebtn"> */}
                 Share Your Incident Anonymously
-              </button>
+                {/* </button> */}
+              </Link>
             </div>
           </>
         )}
         {!Incident && (
           <>
             <div className="Safetytipstitle">
-              How do you 
+              How do you
               <span className="span-underlined"> navigate </span>
-               public places
+              public places
               <span className="span-underlined"> safely? </span>
             </div>
             <div className="Safetytipsdesc">
@@ -66,12 +70,21 @@ export default function MapSide() {
               us what you do for your safety so that others can do the same.
             </div>
             <div className="Safetytipsbtn">
-              <button
+              {/* <button
                 className="Safetytipssharebtn"
                 // Navigation to be put here
               >
                 Share Some Safety Tip Anonymously
-              </button>
+              </button> */}
+              <Link
+                to="/SafetyTipForm"
+                className="Safetytipssharebtn"
+                style={{ textDecoration: "none" }}
+              >
+                {/* <button className="incidentsharebtn"> */}
+                Share Some Safety Tip Anonymously
+                {/* </button> */}
+              </Link>
             </div>
           </>
         )}
