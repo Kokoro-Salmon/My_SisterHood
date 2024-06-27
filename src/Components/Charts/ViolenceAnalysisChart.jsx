@@ -37,7 +37,7 @@ const LABELS = [
 
 export const ViolenceAnalysisChart = () => {
   const { data, loading, reFetch } = useFetch(
-    "http://localhost:3000/getIncidentFormData"
+    "https://my-sisterhood.onrender.com/getIncidentFormData"
   );
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
@@ -118,7 +118,8 @@ export const ViolenceAnalysisChart = () => {
               ></span>
               <span className="legend-label">{label}</span>
               <span className="legend-count">
-                {violenceData.find((data) => data.name === label)?.noOfCases || 0}
+                {violenceData.find((data) => data.name === label)?.noOfCases ||
+                  0}
               </span>
             </div>
           ))}
