@@ -106,7 +106,9 @@ const PurpleMapStyle = [
 export default function Map() {
   const [activeMarker, setActiveMarker] = useState(null);
   const [markers, setMarkers] = useState([]);
-  const { data } = useFetch("http://localhost:3000/getIncidentFormData");
+  const { data } = useFetch(
+    "https://my-sisterhood.onrender.com/getIncidentFormData"
+  );
 
   useEffect(() => {
     const newMarkers = data.map((item) => ({
