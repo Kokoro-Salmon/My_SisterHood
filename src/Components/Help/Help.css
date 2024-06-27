@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap");
+
+.helpername {
+  display: flex;
+  align-items: center;
+}
+
+.help {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+
+.helptext {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(110, 94, 254);
+  margin: 10px;
+  color: white;
+  transform: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.helptext:hover {
+  transform: scaleX(1.1);
+}
+
+.helpcontain {
+  transform: translate(0, 20px);
+  align-items: center;
+  display: flex;
+  border: 2px solid rgb(110, 94, 254);
+  margin: auto;
+  width: max-content;
+  border-radius: 10px;
+  flex-direction: column;
+  font-family: "Mukta Vaani", sans-serif;
+}
+
+.helpa {
+  text-decoration: none;
+  color: yellow;
+}
+
+.helptitle {
+  font-family: "Mukta Vaani", sans-serif;
+  color: rgb(110, 94, 254);
+  padding: 10px;
+}
+
+.hospitalsnearme,
+.policestationsnearme {
+  border-radius: 10px;
+  height: 150px;
+  width: 220px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 120px;
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: large;
+  color: black;
+  background-color: rgb(150, 147, 175);
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.hospitalsnearme:hover,
+.policestationsnearme:hover {
+  -webkit-transform: scale(1.1);
+}
+
+.hostext,
+.policetext {
+  margin: 20px;
+}
+
+.hospitalsnearmesm,
+.policestationsnearmesm {
+  display: none;
+}
+
+@media screen and (max-width: 321px) {
+  .helpcontain {
+    font-size: small;
+    padding: 0px;
+    margin: 0px;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  .helpcontain {
+    margin: auto;
+    font-size: small;
+  }
+
+  .bigsize {
+    display: none;
+  }
+
+  .help {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .hospitalsnearmesm,
+  .policestationsnearmesm {
+    border-radius: 10px;
+    height: 150px;
+    width: 220px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    font-family: "Mukta Vaani", sans-serif;
+    font-size: large;
+    color: black;
+    background-color: rgb(150, 147, 175);
+    -webkit-transition: all 0.2s ease-in-out;
+  }
+
+  .hospitalsnearmesm {
+    margin-top: 30px;
+  }
+
+  .hospitalsnearmesm:hover,
+  .policestationsnearmesm:hover {
+    -webkit-transform: scale(1.1);
+  }
+}
+
+.footerhelp {
+  position: absolute;
+  width: 100%;
+  top: 700px;
+}
