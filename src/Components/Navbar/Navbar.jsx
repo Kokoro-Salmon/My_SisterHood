@@ -148,7 +148,7 @@ const Navbar = () => {
           className="mini-screen"
           style={{ marginTop: "3px" }}
         >
-          <Link to="/Help" style={linkStyle} className="hover-zoom">
+          <Link to="/help" style={linkStyle} className="hover-zoom">
             <button
               style={{
                 backgroundColor: "#17FF8A",
