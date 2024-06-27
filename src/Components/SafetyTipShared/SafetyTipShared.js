@@ -91,7 +91,7 @@ export default function Showincidentsshared() {
     useContext(SafetyTipsContext);
 
   const { data, loading, reFetch } = useFetch(
-    `http://localhost:3000/getAllSafetyTips?typesofassaultst=${typesofassaultst}&locationsst=${locationsst}`
+    `https://my-sisterhood.onrender.com/getAllSafetyTips?typesofassaultst=${typesofassaultst}&locationsst=${locationsst}`
   );
   const [typeofassaultst, setTypeofassaultst] = useState([]);
   const [locationst, setLocationst] = useState("");

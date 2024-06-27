@@ -12,7 +12,7 @@ export default function SimpleTable() {
     useContext(SafetyTipsContext);
 
   const { data, loading, reFetch } = useFetch(
-    `http://localhost:3000/getAllSafetyTips?typesofassaultst=${typesofassaultst}&locationsst=${locationsst}`
+    `https://my-sisterhood.onrender.com/getAllSafetyTips?typesofassaultst=${typesofassaultst}&locationsst=${locationsst}`
   );
 
   const [page, setPage] = useState(0);

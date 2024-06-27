@@ -38,7 +38,7 @@ export const SafetyTipForm = () => {
     // console.log(JSON.stringify(formData));
     await axios
       .post(
-        "http://localhost:3000/safetytip",
+        "https://my-sisterhood.onrender.com/safetytip",
         JSON.stringify(formData),
         {
           headers: { "Content-Type": "application/json" },
@@ -50,12 +50,9 @@ export const SafetyTipForm = () => {
   };
 
   const checkPage = () => {
-    if (page === FormTitles.length - 1) 
-    {
-        return <Button onClick={handleSubmit}>Submit&nbsp;</Button>;
-    } 
-    else 
-    {
+    if (page === FormTitles.length - 1) {
+      return <Button onClick={handleSubmit}>Submit&nbsp;</Button>;
+    } else {
       return (
         <Button onClick={handleclick}>
           Next&nbsp;
@@ -65,17 +62,13 @@ export const SafetyTipForm = () => {
     }
   };
   const PageDisplay = () => {
-    if (page === 0) 
-    {
+    if (page === 0) {
       return <TypeOfViolence formData={formData} setFormData={setFormData} />;
-    } 
-    else if (page === 1) 
-    {
-      return <IncidentDescription formData={formData} setFormData={setFormData} />
-      
-    } 
-    else 
-    {
+    } else if (page === 1) {
+      return (
+        <IncidentDescription formData={formData} setFormData={setFormData} />
+      );
+    } else {
       return <Places formData={formData} setFormData={setFormData} />;
     }
   };

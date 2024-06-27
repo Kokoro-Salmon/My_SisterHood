@@ -56,25 +56,22 @@ export const IncidentForm = () => {
     console.log(formData);
     // console.log(JSON.stringify(formData));
     await axios
-    .post(
-      "http://localhost:3000/incident",
-      JSON.stringify(formData),
-      {
-        headers: { "Content-Type": "application/json" },
-      }
-    )
-    .then((result) => {
-      navigate("/");
-    });
+      .post(
+        "https://my-sisterhood.onrender.com/incident",
+        JSON.stringify(formData),
+        {
+          headers: { "Content-Type": "application/json" },
+        }
+      )
+      .then((result) => {
+        navigate("/");
+      });
   };
 
   const checkPage = () => {
-    if (page === FormTitles.length - 1) 
-    {
-        return <Button onClick={handleSubmit}>Submit&nbsp;</Button>;
-    } 
-    else 
-    {
+    if (page === FormTitles.length - 1) {
+      return <Button onClick={handleSubmit}>Submit&nbsp;</Button>;
+    } else {
       return (
         <Button onClick={handleclick}>
           Next&nbsp;
@@ -84,75 +81,48 @@ export const IncidentForm = () => {
     }
   };
   const PageDisplay = () => {
-    if (page === 0) 
-    {
+    if (page === 0) {
       return <Consent consent={consent} setConsent={setConsent} />;
-    } 
-    else if (page === 1) 
-    {
+    } else if (page === 1) {
       return <Identity formData={formData} setFormData={setFormData} />;
-    } 
-    else if (page === 2) 
-    {
+    } else if (page === 2) {
       return <Gender formData={formData} setFormData={setFormData} />;
-    } 
-    else if (page === 3) 
-    {
+    } else if (page === 3) {
       return <Age formData={formData} setFormData={setFormData} />;
-    } 
-    else if (page === 4) 
-    {
+    } else if (page === 4) {
       return <Time formData={formData} setFormData={setFormData} />;
-    } 
-    else if (page === 5) 
-    {
-      return <IncidentDescription formData={formData} setFormData={setFormData} />
-      
-    } 
-    else if (page === 6) 
-    {
+    } else if (page === 5) {
+      return (
+        <IncidentDescription formData={formData} setFormData={setFormData} />
+      );
+    } else if (page === 6) {
       return <TypeOfViolence formData={formData} setFormData={setFormData} />;
-    } 
-    else if (page === 7) 
-    {
+    } else if (page === 7) {
       return <ReportedToPolice formData={formData} setFormData={setFormData} />;
-    } 
-    else 
-    {
+    } else {
       return <Places formData={formData} setFormData={setFormData} />;
     }
   };
 
   const handleclick = () => {
-    if (page === 0) 
-    {
+    if (page === 0) {
       if (consent === false)
         alert("Please accept the Consent Form to continue!");
       else setPage((currPage) => currPage + 1);
       console.log(formData.consent);
-    } 
-    else if (page === 1) 
-    {
+    } else if (page === 1) {
       if (formData.identity === "") alert("Please Enter Your Identity");
       else setPage((currPage) => currPage + 1);
-    } 
-    else if (page === 2) 
-    {
+    } else if (page === 2) {
       if (formData.gender === "") alert("Please Enter Your Gender");
       else setPage((currPage) => currPage + 1);
-    } 
-    else if (page === 3) 
-    {
+    } else if (page === 3) {
       if (formData.age === "") alert("Please Enter Your Age");
       else if (formData.age < 15) alert("Please Enter a valid Age");
       else setPage((currPage) => currPage + 1);
-    } 
-    else if (page === 4) 
-    {
+    } else if (page === 4) {
       setPage((currPage) => currPage + 1);
-    } 
-    else if (page === 5) 
-    {
+    } else if (page === 5) {
       if (formData.title === "" || formData.message === "")
         alert("Please Enter the Valid Description or Title");
       else if (formData.message.length < 20)
@@ -166,15 +136,11 @@ export const IncidentForm = () => {
           `Please enter ${6 - formData.title.length} more Characters in Title!`
         );
       else setPage((currPage) => currPage + 1);
-    } 
-    else if (page === 6) 
-    {
+    } else if (page === 6) {
       if (formData.typeOfViolence === "")
         alert("Please Enter Type Of Violence");
       else setPage((currPage) => currPage + 1);
-    } 
-    else if (page === 7) 
-    {
+    } else if (page === 7) {
       if (formData.reportToPolice === "")
         alert("Please Enter a Valid Choice!!");
       else setPage((currPage) => currPage + 1);
@@ -185,21 +151,24 @@ export const IncidentForm = () => {
     <>
       <div className="Form">
         <div className="form-container">
-          <div> <ProgressBar PercentDone={parseInt(11.6 * page)} /></div>
+          <div>
+            {" "}
+            <ProgressBar PercentDone={parseInt(11.6 * page)} />
+          </div>
           <h1 className="formTitles">{FormTitles[page]}</h1>
           <div className="body">{PageDisplay()}</div>
           <div className="IncidentFormBtns">
             <Button
-            //   className="prevBtn navigateBtn"
-            disabled={page === 0}
-            onClick={() => {
-              setPage((currPage) => currPage - 1);
-              setConsent(false);
-            }}
-          >
-            <ArrowBackIcon style={{ fontSize: "20px" }} />
-            &nbsp;Prev
-          </Button>
+              //   className="prevBtn navigateBtn"
+              disabled={page === 0}
+              onClick={() => {
+                setPage((currPage) => currPage - 1);
+                setConsent(false);
+              }}
+            >
+              <ArrowBackIcon style={{ fontSize: "20px" }} />
+              &nbsp;Prev
+            </Button>
             {checkPage()}
           </div>
         </div>

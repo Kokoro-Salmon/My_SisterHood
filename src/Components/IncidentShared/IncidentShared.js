@@ -97,7 +97,7 @@ export default function IncidentShared() {
   } = useContext(SearchContext);
 
   const { data, loading, reFetch } = useFetch(
-    `http://localhost:3000/getAllIncidents?typesofassault=${typesofassault}&locations=${locations}&showIncidentsfrom=${showIncidentsfrom}`
+    `https://my-sisterhood.onrender.com/getAllIncidents?typesofassault=${typesofassault}&locations=${locations}&showIncidentsfrom=${showIncidentsfrom}`
   );
 
   const [typeofassault, setTypeofassault] = useState([]);
