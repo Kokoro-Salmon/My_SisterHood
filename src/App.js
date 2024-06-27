@@ -12,7 +12,9 @@ import TopNGOs from "../src/Pages/TopNgos/TopNgos";
 import { IncidentForm } from "./Components/IncidentFrom/IncidentForm";
 import { SafetyTipForm } from "./Components/SafetyTipForm/SafetyTipForm";
 import SharedData from "./Pages/SharedData/SharedData";
+import { Analytics } from "./Pages/Analytics/Analytics";
 import Help from "./Components/Help/Help";
+
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
           <Route path="/IncidentForm" element={<IncidentForm />}></Route>
           <Route path="/SafetyTipForm" element={<SafetyTipForm />}></Route>
           <Route path="/SharedData" element={<SharedData />}></Route>
+          <Route path="/Analytics" element={<Analytics />}></Route>
           <Route path="/help" element={<Help />}></Route>
         </Routes>
       </BrowserRouter>

@@ -109,7 +109,7 @@ const Navbar = () => {
             Top NGOs
           </Link>
           <a
-            href="#Analytics"
+            href="/Analytics"
             style={activeSection === "analytics" ? activeLinkStyle : linkStyle}
             onMouseEnter={() => setActiveSection("analytics")}
             onMouseLeave={resetActiveSection}
