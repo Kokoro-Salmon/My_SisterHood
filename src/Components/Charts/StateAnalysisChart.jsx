@@ -4,9 +4,19 @@ import "./Charts.css";
 import useFetch from "../../Hooks/useFetch";
 
 const COLORS = [
-  "#1430B8", "#FD4D0C", "#448D76", "#FCBA12", "#B814B2",
-  "#341109", "#66B032", "#00C49F", "#8601AF", "#FD3A0F",
-  "#7CCD7C", "#6495ED", "#CDB79E"
+  "#1430B8",
+  "#FD4D0C",
+  "#448D76",
+  "#FCBA12",
+  "#B814B2",
+  "#341109",
+  "#66B032",
+  "#00C49F",
+  "#8601AF",
+  "#FD3A0F",
+  "#7CCD7C",
+  "#6495ED",
+  "#CDB79E",
 ];
 
 const STATE_MAP = new Map([
@@ -49,94 +59,99 @@ const STATE_MAP = new Map([
 ]);
 
 export const StateAnalysisChart = () => {
-    const { data, loading } = useFetch("http://localhost:3000/getIncidentFormData");
-    const chartRef = useRef(null);
-    const chartInstance = useRef(null);
-    const [stateData, setStateData] = useState([]);
-  
-    useEffect(() => {
-      if (!loading && data) {
-        console.log(data); // For debugging purposes
-  
-        let stateCountMap = new Map(STATE_MAP);
-  
-        for (let i = 0; i < data.length; ++i) {
-          if (data[i].address && data[i].address.state) {
-            stateCountMap.set(data[i].address.state, (stateCountMap.get(data[i].address.state) || 0) + 1);
-          }
+  const { data, loading } = useFetch(
+    "https://my-sisterhood.onrender.com/getIncidentFormData"
+  );
+  const chartRef = useRef(null);
+  const chartInstance = useRef(null);
+  const [stateData, setStateData] = useState([]);
+
+  useEffect(() => {
+    if (!loading && data) {
+      console.log(data); // For debugging purposes
+
+      let stateCountMap = new Map(STATE_MAP);
+
+      for (let i = 0; i < data.length; ++i) {
+        if (data[i].address && data[i].address.state) {
+          stateCountMap.set(
+            data[i].address.state,
+            (stateCountMap.get(data[i].address.state) || 0) + 1
+          );
         }
-  
-        console.log(stateCountMap); // For debugging purposes
-  
-        let StateData = [];
-        let idx = 0;
-        for (let [key, value] of stateCountMap.entries()) {
-          const obj = {
-            id: idx,
-            name: key,
-            noOfCases: value,
-          };
-          idx = idx + 1;
-          StateData.push(obj);
-        }
-  
-        console.log(StateData); // For debugging purposes
-  
-        setStateData(StateData);
-  
-        const ctx = chartRef.current.getContext("2d");
-  
-        if (chartInstance.current) {
-          chartInstance.current.destroy();
-        }
-        chartInstance.current = new Chart(ctx, {
-          type: "bar",
-          data: {
-            labels: StateData.map((d) => d.name),
-            datasets: [
-              {
-                label: 'Number of Crimes',
-                data: StateData.map((d) => d.noOfCases),
-                backgroundColor: COLORS,
-                borderColor: COLORS,
-                borderWidth: 1
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              tooltip: {
-                callbacks: {
-                  label: function (tooltipItem) {
-                    return `${tooltipItem.label}: ${tooltipItem.raw}`;
-                  },
+      }
+
+      console.log(stateCountMap); // For debugging purposes
+
+      let StateData = [];
+      let idx = 0;
+      for (let [key, value] of stateCountMap.entries()) {
+        const obj = {
+          id: idx,
+          name: key,
+          noOfCases: value,
+        };
+        idx = idx + 1;
+        StateData.push(obj);
+      }
+
+      console.log(StateData); // For debugging purposes
+
+      setStateData(StateData);
+
+      const ctx = chartRef.current.getContext("2d");
+
+      if (chartInstance.current) {
+        chartInstance.current.destroy();
+      }
+      chartInstance.current = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: StateData.map((d) => d.name),
+          datasets: [
+            {
+              label: "Number of Crimes",
+              data: StateData.map((d) => d.noOfCases),
+              backgroundColor: COLORS,
+              borderColor: COLORS,
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: function (tooltipItem) {
+                  return `${tooltipItem.label}: ${tooltipItem.raw}`;
                 },
               },
-              legend: {
-                display: false,
+            },
+            legend: {
+              display: false,
+            },
+          },
+          scales: {
+            x: {
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: "States",
               },
             },
-            scales: {
-              x: {
-                beginAtZero: true,
-                title: {
-                  display: true,
-                  text: 'States'
-                }
+            y: {
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: "Number of Crimes",
               },
-              y: {
-                beginAtZero: true,
-                title: {
-                  display: true,
-                  text: 'Number of Crimes'
-                }
-              }
-            }
+            },
           },
-        });
-      }
-    }, [data, loading]);
+        },
+      });
+    }
+  }, [data, loading]);
 
   return (
     <div className="StateWiseChartanaly">
