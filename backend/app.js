@@ -5,28 +5,28 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const config = require("config");
-// const bodyParser = require("body-parser");
-// const swaggerUI = require("swagger-ui-express");
-// const swaggerJsDoc = require("swagger-jsdoc");
+const bodyParser = require("body-parser");
+const swaggerUI = require("swagger-ui-express");
+const swaggerJsDoc = require("swagger-jsdoc");
 
-// const options = {
-//   definition: {
-//     openapi: "3.0.3",
-//     info: {
-//       title: "Sisterhood API",
-//       version: "1.0.0",
-//       description: "A simple Express APIs",
-//     },
-//     servers: [
-//       {
-//         url: "http://localhost:3000",
-//       },
-//     ],
-//   },
-//   apis: ["./routes/*.js"],
-// };
+const options = {
+  definition: {
+    openapi: "3.0.3",
+    info: {
+      title: "Sisterhood API",
+      version: "1.0.0",
+      description: "A simple Express APIs",
+    },
+    servers: [
+      {
+        url: "http://localhost:3000",
+      },
+    ],
+  },
+  apis: ["./routes/*.js"],
+};
 
-// const specs = swaggerJsDoc(options);
+const specs = swaggerJsDoc(options);
 
 const indexRouter = require("./routes/index");
 
