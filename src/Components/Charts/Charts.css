@@ -1,8 +1,9 @@
-.analyticspage{
+.analyticspage {
   margin-top: 10vh;
   /* background-image: linear-gradient(to bottom, #eae2fb, rgb(209, 229, 247)); */
 }
-.Violenceanlyheade,.Stateanlyheade{
+.Violenceanlyheade,
+.Stateanlyheade {
   font-size: 3rem;
   color: rgb(115, 40, 245);
   font-weight: bold;
@@ -12,28 +13,30 @@
   align-items: center;
   margin-top: 5vh;
 }
-.ViolenceWiseChartanaly,.StateWiseChartanaly {
+.ViolenceWiseChartanaly,
+.StateWiseChartanaly {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 94vh;
 }
 
-.Violenceanaly, .Stateanaly {
+.Violenceanaly,
+.Stateanaly {
   margin-bottom: 20px;
 }
 
-.violencegraphanddisplay{
+.violencegraphanddisplay {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.stategraphanddisplay{
+.stategraphanddisplay {
   width: 75%;
 }
 
-.Violencegraph{
+.Violencegraph {
   width: 30%;
 }
 
