@@ -8,6 +8,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useContext } from "react";
 import { SearchContext } from "../../Context/SearchContext.js";
 import IncidentShared from "../IncidentShared/IncidentShared.js";
+import "./IncidentDialog.css"
 
 const OpenDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {

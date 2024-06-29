@@ -18,8 +18,8 @@
   padding: 5px;
   font-weight: bold;
   font-size: 0.8rem;
-  border: 2px solid rgb(132, 139, 219);
-  color: rgb(132, 139, 219);
+  border: 2px solid rgb(115, 40, 245);
+  color: rgb(115, 40, 245);
   white-space: nowrap;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .chipcontainerst {
-  background-color: rgb(132, 139, 219);
+  background-color: rgba(115, 40, 245, 0.253);
   padding: 8px;
   border-radius: 10px;
 }
@@ -51,10 +51,10 @@
   align-items: center;
   background: transparent;
   font-weight: bold;
-  color: blue;
+  color: rgb(115, 40, 245);
   font-size: medium;
   cursor: pointer;
-  border: 2px solid blue;
+  border: 2px solid rgb(115, 40, 245);
   border-radius: 6px;
   padding: 5px 20px;
 }
