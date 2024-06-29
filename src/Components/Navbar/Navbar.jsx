@@ -97,8 +97,17 @@ const Navbar = () => {
             onMouseLeave={resetActiveSection}
             className="hover-zoom"
           >
-            Shared Incidents and Safety Tips
+            Shared Data
           </Link>
+          {/* <a
+            href="https://colab.research.google.com/drive/1dDdl7ux3ccOshyKM6_I4ihPk8gIgFwRm?usp=sharing"
+            style={activeSection === "govtdata" ? activeLinkStyle : linkStyle}
+            onMouseEnter={() => setActiveSection("govtdata")}
+            onMouseLeave={resetActiveSection}
+            className="hover-zoom"
+          >
+            Govt. Data
+          </a> */}
           <Link
             to="/TopNGOs"
             style={activeSection === "topngos" ? activeLinkStyle : linkStyle}
