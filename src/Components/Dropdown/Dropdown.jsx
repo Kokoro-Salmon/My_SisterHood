@@ -32,6 +32,14 @@ const Dropdown = () => {
           Faqs
         </NavLink>
       </li>
+      <li>
+        <a
+          href="https://colab.research.google.com/drive/1dDdl7ux3ccOshyKM6_I4ihPk8gIgFwRm?usp=sharing"
+          onClick={() => setClick(false)}
+        >
+          Govt. Data
+        </a>
+      </li>
     </ul>
   );
 };
