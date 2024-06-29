@@ -33,7 +33,7 @@ const Navbar = () => {
 
   const activeLinkStyle = {
     ...linkStyle,
-    color: "#FF3400",
+    color: "#7328F5",
   };
 
   const [dropdown, setDropdown] = useState(false);
@@ -160,7 +160,7 @@ const Navbar = () => {
           <Link to="/help" style={linkStyle} className="hover-zoom">
             <button
               style={{
-                backgroundColor: "#17FF8A",
+                // backgroundColor: "#17FF8A",
                 color: "#b21800",
                 fontFamily: "Inter",
                 fontSize: "20px",

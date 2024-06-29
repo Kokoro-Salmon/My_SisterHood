@@ -6,7 +6,7 @@
   height: 320px;
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
+  border: 2px solid rgb(115, 40, 245);
   background-color: #fff;
   font-family: "Mukta Vaani", sans-serif;
   filter: drop-shadow(1px 5px 3px rgb(136, 133, 133));
@@ -20,7 +20,7 @@
 }
 
 .incidentTitle {
-  color: blue;
+  color: rgb(115, 40, 245);
   font-size: 20px;
   text-align: left;
 }
@@ -30,9 +30,7 @@
 }
 
 .incidentdesc {
-  padding: 15px 0px;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 1.3rem;
 }
 
 .incidentlocation {

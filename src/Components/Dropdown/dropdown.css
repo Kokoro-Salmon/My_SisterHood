@@ -34,7 +34,7 @@
 }
 
 .dropdown-menu li:hover {
-  background: #5cabff;
+  background: rgba(115, 40, 245, 0.271);
   border-radius: 4px;
 }
 
