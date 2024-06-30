@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap");
 
-.Incidentonecard {
+.Incidentonecard2 {
   padding: 10px;
   width: 340px;
   height: 320px;
@@ -14,51 +14,51 @@
 }
 
 @media screen and (max-width: 425px) {
-  .Incidentonecard {
+  .Incidentonecard2 {
     height: max-content;
   }
 }
 
-.incidentTitle {
+.incidentTitle2 {
   color: rgb(115, 40, 245);
   font-size: 20px;
   text-align: left;
 }
 
-.IncidentHeader {
+.IncidentHeader2 {
   font-weight: bold;
 }
 
-.incidentdesc {
-  font-size: 1.3rem;
+.incidentdesc2 {
+  font-size: 1rem;
 }
 
-.incidentlocation {
+.incidentlocation2 {
   display: flex;
   flex-direction: row;
 }
 
-.incidentTime {
+.incidentTime2 {
   display: flex;
   flex-direction: row;
 }
 
-.incidentDate {
+.incidentDate2 {
   display: flex;
   flex-direction: row;
 }
 
-.incidentlocandatetimespace {
+.incidentlocandatetimespace2 {
   height: 240px;
 }
 
-.incidentlocandatetime {
+.incidentlocandatetime2 {
   position: absolute;
   bottom: 10px;
 }
 
 @media screen and(min-width:425px) {
-  .incidentlocandatetime {
+  .incidentlocandatetime2 {
     position: absolute;
     bottom: 10px;
   }
