@@ -22,20 +22,20 @@ const Sidenav = () => {
     setTakeincident(true);
   }
   return (
-    <div className="viewdatapage">
-      <div className="sidebarshared">
-        <div className="sidenav">
-          <div className="incidenttips">
+    <div className="viewdatapage2">
+      <div className="sidebarshared2">
+        <div className="sidenav2">
+          <div className="incidenttips2">
             <div
               className={
-                Incident ? "togactive incidentsnearme" : "incidentsnearme"
+                Incident ? "togactive2 incidentsnearme2" : "incidentsnearme2"
               }
               onClick={() => handleIncidents(true)}
             >
               Incidents
             </div>
             <div
-              className={!Incident ? "togactive safetytips" : "safetytips"}
+              className={!Incident ? "togactive2 safetytips2" : "safetytips2"}
               onClick={() => handleIncidents(false)}
             >
               Safety Tips
@@ -43,12 +43,12 @@ const Sidenav = () => {
           </div>
         </div>
         {Incident && (
-          <div className="showincidentsshared">
+          <div className="showincidentsshared2">
             <TopIncidentBar />
           </div>
         )}
         {!Incident && (
-          <div className="showsafetytipsshared">
+          <div className="showsafetytipsshared2">
             <TopSafetyTipsBar />
           </div>
         )}
