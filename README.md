@@ -1,72 +1,22 @@
-# Getting Started with Create React App
+# My SisterHood
+Hey, Check out SisterHood! It's this app We made during a Hackathon Focusing on Women’s Safety. We also took data from India Gov Data site, did Analysis using a Python notebook. You can get all Sorts of Safety Tips, see where Incidents have been reported on Google Maps, and even Dive into some in site stats made using Chart.js. We also made sure to include info on Women’s safety organizations And We are pretty Proud of How it came together!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Live Website Link :- `: [Click here](https://my-sister-hood.vercel.app/)
 
-## Available Scripts
+### Home Page
+![Home Page ](https://imgur.com/dM6NyH7.jpg)
+### Here is the Map Showcasing all the Incidents Happened with Time and Type of Assault .
+![GoogleMapsIncident](https://imgur.com/ayit6EY.jpg)
+### Incident Form which takes the Data Anonymously
+![IncidentForm](https://imgur.com/Oy5Log1.jpg)
+### Statistical Data based on the Incidents provided on Filling the Form Using Chart.js. 
+![StasticalData](https://imgur.com/RtEqx6g.jpg)
+### Legal Resources like Punishments for type of Assault Happened.
+![LegalResources](https://imgur.com/82mlLkv.jpg)
+### Out Gov Data Analysis(2001-2014) Using Python.
+![Gov Data Analysis](https://imgur.com/Kf7oTt2.jpg)
+![Gov Data Analysis2](https://imgur.com/gy3yn6Y.jpg)
 
-In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-Thank You
+## Thank You for Being Part of This Wondeful Crew !!!!
+*Made using React, Javascript, MongoDB and Express With a Hint of Python.*
