@@ -4,19 +4,19 @@ Hey, Check out SisterHood! It's this app We made during a Hackathon Focusing on 
 `Live Website Link :- `: [Click here](https://my-sister-hood.vercel.app/)
 
 ### Home Page
-![Home Page ](https://imgur.com/dM6NyH7.jpg)
+![Home Page ](https://drive.google.com/uc?export=view&id=1HTH8LqtzUVsfsF62IizyscpWYTKXms17)
 ### Here is the Map Showcasing all the Incidents Happened with Time and Type of Assault .
-![GoogleMapsIncident](https://imgur.com/ayit6EY.jpg)
+![GoogleMapsIncident](https://drive.google.com/uc?export=view&id=1SIgrPXfdg2eovDvlaggkrY9vcsKq5VMG)
 ### Incident Form which takes the Data Anonymously
-![IncidentForm](https://imgur.com/Oy5Log1.jpg)
+![IncidentForm](https://drive.google.com/uc?export=view&id=1isqCUfMwHRln4Cm3qIf3UL54zhceFYN3)
 ### Statistical Data based on the Incidents provided on Filling the Form Using Chart.js. 
-![StasticalData](https://imgur.com/RtEqx6g.jpg)
+![StasticalData](https://drive.google.com/uc?export=view&id=1cNncUDz-kacAaN_1i1IGt6OaOM3rWSkx)
 ### Legal Resources like Punishments for type of Assault Happened.
-![LegalResources](https://imgur.com/82mlLkv.jpg)
+![LegalResources](https://drive.google.com/uc?export=view&id=1i07AUxlgi0vo7-3Mn_X-zEOISbqH3D3Z)
 ### Out Gov Data Analysis(2001-2014) Using Python.
-![Gov Data Analysis](https://imgur.com/Kf7oTt2.jpg)
-![Gov Data Analysis2](https://imgur.com/gy3yn6Y.jpg)
+![Gov Data Analysis](https://drive.google.com/uc?export=view&id=19I5wQ72jehh3VLEvpmYsFNb8qGuRGij3)
+![Gov Data Analysis2](https://drive.google.com/uc?export=view&id=1qJw8Vr1pONcjwMz1l0NwXje3h6ap7Jux)
 
 
 ## Thank You for Being Part of This Wondeful Crew !!!!
-*Made using React, Javascript, MongoDB and Express With a Hint of Python.*
+*Made using React, Javascript, MongoDB and ExpressJS With a Hint of Python.*
